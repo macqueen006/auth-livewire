@@ -1,4 +1,4 @@
-# Laravel Authentication System (Jetstream & Fortify)
+# Laravel Authentication System (Jetstream, Fortify & Livewire)
 
 This project implements a secure authentication system in Laravel using **Jetstream** and **Fortify**. It supports user registration, login, email verification, password reset, and optional two-factor authentication (2FA).
 
