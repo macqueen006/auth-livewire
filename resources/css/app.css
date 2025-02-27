@@ -1,0 +1,85 @@
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../vendor/laravel/jetstream/**/*.blade.php';
+
+@theme {
+    --color-blue-60: #0060df;
+    --color-blue-70: #003eaa;
+    --color-gray-20: #ededf0;
+    --color-light-gray: #f0f0f4;
+    --color-white: #ffffff;
+    --color-transition: all 0.15s cubic-bezier(0.07, 0.95, 0, 1);
+    --color-borders: 1px solid #ededf0;
+    --color-border-light: rgba(0, 0, 0, 0.1);
+    --color-primary-text: #15141a;
+    --color-secondary-text: #5b5b66;
+    --color-font-size: 13px;
+    --color-primary: #f5f5f7;
+    --color-body: #1d1d1f;
+    --color-title: black;
+    --color-black: #000;
+    --color-bg: #d5eefd;
+    --color-transparent: transparent;
+    --color-secondary: #e55422;
+    --color-font-color: #999;
+    --color-background: #d9d9d9;
+    --color-img-background: #f1f1f1;
+    /* Rounded*/
+    --rounded-lg: 10px;
+    /*Spacing also Gap*/
+    --spacing-6: 10px;
+    --spacing-desktop: 150px;
+    --spacing-tablet: 100px;
+    --spacing-mobile-landscape: 80px;
+    --spacing-mobile-portrait: 60px;
+    /*shadow*/
+    /*--shadow-sm:*/
+    /*Tabs*/
+    --tab-size-2: 2;
+    --tab-size-4: 4;
+    --tab-size-github: 8;
+    /* Breakpoints*/
+    /*--breakpoint-*: initial; reset all breakpoint and use your own below*/
+    --breakpoint-xs: 29.9375rem;
+    --breakpoint-xmd: 47.9375rem;
+    --breakpoint-xlg: 61.9375rem;
+    /*Fonts*/
+    --font-display: 'Switzer', sans-serif;
+    /*Container*/
+    --container-8xl: 96rem;
+    /*Shadow*/
+    --shadow-xs: 2px 4px 12px #00000014;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+[x-cloak] {
+    display: none;
+}
+
+.CodeMirror{
+    border-radius: 6px;
+    border: 1px solid #e1e1e5;
+}
+
+input[type='number'].auth-component-code-input {
+    -moz-appearance:textfield;
+}
+
+input.auth-component-code-input::-webkit-outer-spin-button,
+input.auth-component-code-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
